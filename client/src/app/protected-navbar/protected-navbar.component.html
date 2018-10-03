@@ -1,0 +1,12 @@
+<mat-toolbar class="navbar">
+    <div class="search-bar">
+      <app-search></app-search>
+    </div>
+    <button class="home-button" routerLink="">Home</button>
+    <button class="menu-button" [matMenuTriggerFor]="menu">
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logOff()">Log Off</button>
+      <a mat-menu-item [routerLink]="['/public-profile']" [queryParams]="{name: name}">Public Profile</a>
+    </mat-menu>
+</mat-toolbar>

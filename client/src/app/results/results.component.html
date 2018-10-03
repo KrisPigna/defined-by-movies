@@ -1,0 +1,19 @@
+<app-protected-navbar></app-protected-navbar>
+<mat-card class="container" (window:resize)="onResize($event)">
+  <div *ngIf="results">
+      <mat-grid-list class="movie-list" cols="{{colNum}}" rowHeight="420px">
+          <mat-grid-tile class="movie-item" *ngFor="let result of this.results['Search']">
+              <mat-card class="movie-item">
+                <mat-card-header>
+                  <mat-card-title class="movie-title">{{result.Title}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image src= {{result.Poster}} class="poster" alt="Photo of {{result.Title}}">
+                <mat-card-actions>
+                    <button mat-fab *ngIf="result" class="add-button" (click)="addMovie(result)">Add</button>
+                </mat-card-actions>
+              </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+</div>
+</mat-card>
+

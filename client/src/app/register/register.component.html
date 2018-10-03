@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<mat-card class="container">
+            <mat-card class="form-card">
+                <form class="form" (ngSubmit)="onSubmit()" #newUserForm="ngForm">
+                    <mat-form-field class="form-full-width" appearance="outline">
+                        <mat-label>Name:</mat-label>
+                        <input matInput type="text" id="name" required [(ngModel)]="user.name" (ngModelChange)="checkNameLength($event)" name="name" #name="ngModel">
+                    </mat-form-field>
+                    <div class="invalid" *ngIf="showInvalidName">Name must be at least 4 characters long.</div>
+                    <mat-form-field class="form-full-width" appearance="outline">
+                        <mat-label>Email:</mat-label>
+                        <input matInput type="email" id="email" required [(ngModel)]="user.email" (ngModelChange)="checkEmail($event)" name="email" #email="ngModel">
+                    </mat-form-field>
+                    <div class="invalid" *ngIf="showInvalidEmail">Invalid email.</div>
+                    <mat-form-field class="form-full-width" appearance="outline">
+                        <mat-label>Password:</mat-label>
+                        <input matInput type="password" id="password" required [(ngModel)]="user.password" (ngModelChange)="checkPasswordLength($event)" name="password"
+                            #password="ngModel">
+                    </mat-form-field>
+                    <div class="invalid" *ngIf="showInvalidPassword">Password must be at least 6 characters long.</div>
+                    <mat-form-field class="form-full-width" appearance="outline">
+                        <mat-label>Confirm Password:</mat-label>
+                        <input matInput type="password" id="confirm-password" required [(ngModel)]="user.confirmPassword" (ngModelChange)="checkPasswordMatch($event)" name="confirm-password"
+                            #confirmPassword="ngModel">
+                    </mat-form-field>
+                    <div class="invalid" *ngIf="showInvalidPasswordMatch">Passwords do not match.</div>
+                    <mat-card *ngIf="error" class="error">{{errorMessage}}</mat-card>
+                    <button mat-stroked-button class="button" type="submit" [disabled]="! validated">Submit</button>
+                </form>
+            </mat-card>
+</mat-card>

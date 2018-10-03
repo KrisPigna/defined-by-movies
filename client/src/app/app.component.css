@@ -1,0 +1,23 @@
+@media (max-width: 374px) {
+    .main-container {
+        height: auto;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 960px) {
+    .main-container {
+        min-width: 360px;
+        height: auto;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 961px) {
+    .main-container {
+        margin-left: 10%;
+        margin-right: 10%;
+        min-width: 560px;
+        height: auto;
+    }
+  }

@@ -1,0 +1,128 @@
+.message {
+    color: rgb(46, 46, 46);
+}
+
+.header {
+    font-size: x-large;
+}
+
+@media (max-width: 374px) {
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+        min-width: 180px;
+        max-width: 300px;
+        width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .remove-button {
+        margin-left: 40%;
+    }
+    
+    .empty {
+        display: block;
+        max-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .card-container {
+        margin-top: 5%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 960px) {
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+       min-width: 180px;
+       max-width: 300px;
+       width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .remove-button {
+        margin-left: 40%;
+    }
+    
+    .empty {
+        display: block;
+        max-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .card-container {
+        margin-top: 5%;
+    }
+
+    .movie-title {
+        height: 55px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 961px) {
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+       min-width: 180px;
+       max-width: 300px;
+       width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .remove-button {
+        margin-left: 40%;
+    }
+    
+    .empty {
+        display: block;
+        max-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .card-container {
+        margin-top: 5%;
+    }
+    
+    .movie-title {
+        height: 55px;
+    }
+  }

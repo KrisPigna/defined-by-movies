@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+body, html {
+    height: 100%;
+}
+
+.background {
+    background-color: rgb(109, 109, 109);
+}
+
+.navbar {
+    background-color: rgb(46, 46, 46);
+}
+
+.title {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: rgb(243, 243, 243);
+    text-align: center;
+}
+
+.container-alt-color {
+    background-color: rgb(109, 109, 109);
+}
+
+.card {
+    size: 100%;
+}
+
+@media (max-width: 374px) {
+    .container {
+        display: block;
+        background-color: rgb(243, 243, 243);
+        height: 90%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 960px) {
+    .container {
+        background-color: rgb(243, 243, 243);
+        height: 90%;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 961px) {
+    .container {
+        background-color: rgb(243, 243, 243);
+        height: 90%;
+    }
+  }

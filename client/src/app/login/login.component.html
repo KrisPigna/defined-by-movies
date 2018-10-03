@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<mat-card class="container" (window:resize)="onResize($event)">
+  <mat-grid-list cols="{{colNum}}" class="login-container" rowHeight="550px">
+    <mat-grid-tile>
+      <mat-card class="form-card">
+        <form class="form" (ngSubmit)="onSubmit()" #newUserForm="ngForm">
+          <mat-form-field class="form-full-width" appearance="outline">
+            <mat-label>Name:</mat-label>
+            <input matInput type="text" id="name" required [(ngModel)]="user.name" name="name" #name="ngModel">
+          </mat-form-field>
+          <mat-form-field class="form-full-width" appearance="outline">
+            <mat-label>Password:</mat-label>
+            <input matInput type="password" id="password" required [(ngModel)]="user.password" name="password"
+              #password="ngModel">
+          </mat-form-field>
+          <mat-card *ngIf="error" class="error">Username or password is incorrect</mat-card>
+          <mat-grid-list class="buttons" cols="2" rowHeight="40px">
+            <mat-grid-tile>
+              <button mat-stroked-button type="submit">Submit</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <a mat-stroked-button routerLink="/register">Sign Up</a>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </form>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="show">
+      <span class="image"></span>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

@@ -1,0 +1,114 @@
+@media (max-width: 374px) {
+    .search-bar {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    .home-button {
+        color: white;
+        height: 35px;
+        width: 50px;
+        min-width: 50px;
+        border-radius: 5%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+    }
+
+    .menu-button {
+        color: white;
+        height: 35px;
+        width: 35px;
+        min-width: 35px;
+        border-radius: 5%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+        background-image: url("../../assets/images/menu-icon.jpg");
+        background-position: center;
+        background-size: 1em;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 80px;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 960px) {
+    .search-bar {
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    .home-button {
+        color: white;
+        height: 35px;
+        width: 80px;
+        min-width: 80px;
+        border-radius: 5%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+    }
+
+    .menu-button {
+        color: white;
+        height: 35px;
+        width: 40px;
+        min-width: 40px;
+        border-radius: 10%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+        background-image: url("../../assets/images/menu-icon.jpg");
+        background-position: center;
+        background-size: 1em;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 80px;
+    }
+}
+
+@media (min-width: 961px) {
+    .search-bar {
+        display: inline-block;
+        width: 100%;
+        padding-top: 3px;
+    }
+
+    .home-button {
+        color: white;
+        height: 35px;
+        width: 80px;
+        min-width: 80px;
+        border-radius: 5%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+    }
+
+    .menu-button {
+        color: white;
+        height: 35px;
+        width: 50px;
+        min-width: 50px;
+        border-radius: 10%;
+        border: 1px solid white;
+        background-color: rgb(46, 46, 46);
+        padding-bottom: 1px;
+        background-image: url("../../assets/images/menu-icon.jpg");
+        background-position: center;
+        background-size: 1em;
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        height: 80px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}

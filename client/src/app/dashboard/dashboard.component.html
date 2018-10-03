@@ -1,0 +1,19 @@
+<app-protected-navbar></app-protected-navbar>
+<mat-card class="container" (window:resize)="onResize($event)">
+  <div class="card-container">
+    <mat-card *ngIf="collectionEmpty" class="empty">Your movie collection is empty! Search for movies and start adding your favorites.</mat-card>
+  </div>
+  <mat-grid-list class="movie-list" cols="{{colNum}}" rowHeight="420px">
+    <mat-grid-tile class="movie-item" *ngFor="let movie of movies">
+        <mat-card class="movie-item">
+          <mat-card-header class="movie-title">
+            <mat-card-title>{{movie.title}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src= {{movie.poster}} class="poster" alt="Photo of {{movie.title}}">
+          <mat-card-actions>
+            <button mat-fab class="remove-button" (click)="deleteMovie(movie)">Remove</button>
+          </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

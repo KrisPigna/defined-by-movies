@@ -1,0 +1,20 @@
+@media (max-width: 374px) {
+    .search-field {
+        width: 100px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 960px) {
+    .search-field {
+        width: 130px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 961px) {
+
+    .search-field {
+        width: 300px;
+    }
+  }

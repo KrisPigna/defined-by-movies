@@ -1,0 +1,19 @@
+{
+  "name": "definedbymovies",
+  "version": "1.0.0",
+  "description": "A website where users can create a profile and search and add movies to it.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kris Pigna",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.4"
+  }
+}

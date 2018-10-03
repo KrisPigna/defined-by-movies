@@ -1,0 +1,5 @@
+<p>{{ title }} {{ message }}</p>
+<mat-dialog-actions>
+    <button mat-stroked-button *ngIf="added" [mat-dialog-close]="false" routerLink="/dashboard">Back to Dashboard</button>
+    <button mat-stroked-button *ngIf="!added" [mat-dialog-close]="false">Close</button>
+</mat-dialog-actions>

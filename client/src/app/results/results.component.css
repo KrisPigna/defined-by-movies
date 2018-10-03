@@ -1,0 +1,98 @@
+@media (max-width: 374px) {
+    .result-container {
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+        margin-top: 5%;
+    }
+
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+       min-width: 180px;
+       max-width: 300px;
+       width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .add-button {
+        margin-left: 40%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 375px) and (max-width: 960px) {
+    .result-container {
+        display: block;
+        margin: 0 auto;
+        height: 300px;
+        margin-top: 5%;
+    }
+
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+       min-width: 180px;
+       max-width: 300px;
+       width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .add-button {
+        margin-left: 40%;
+    }
+
+    .movie-title {
+        height: 55px;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 961px) {
+    .movie-list {
+        margin: 5%;
+        width: auto;
+    }
+    
+    .movie-item {
+       min-width: 180px;
+       max-width: 300px;
+       width: 100%;
+    }
+    
+    .poster {
+        display: block;
+        max-height:260px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .add-button {
+        margin-left: 40%;
+    }
+
+    .movie-title {
+        height: 55px;
+    }
+  }
